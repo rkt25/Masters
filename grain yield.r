@@ -2,9 +2,6 @@ library(readxl)
 library(tidyverse)
 library(pbkrtest)
 dry.grainyield <- read_excel("grain yield2.xlsx")
-#View(dry.grainyield)
-#check summary details about variables
-#to get R to recognize Brand as a categorical variable
 
 
 dry.grainyield$crop<-as.factor(dry.grainyield$crop)
